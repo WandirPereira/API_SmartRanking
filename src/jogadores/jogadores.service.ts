@@ -12,7 +12,7 @@ import { Jogador } from './interfaces/jogador.interface';
 
 @Injectable()
 export class JogadoresService {
-  private jogadores: Jogador[] = [];
+  //private jogadores: Jogador[] = [];
 
   constructor(
     @InjectModel('Jogador') private readonly jogadorModel: Model<Jogador>,
