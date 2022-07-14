@@ -87,7 +87,7 @@ export class CategoriasService {
 
     console.log(jogadorJaCadastradoCategoria);
 
-    if (jogadorJaCadastradoCategoria.jogadores.length > 0) {
+    if (jogadorJaCadastradoCategoria) {
       throw new BadRequestException(
         `Jogador ${idJogador} já cadastrado na categoria ${categoria}!`,
       );
